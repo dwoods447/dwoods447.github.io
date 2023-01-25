@@ -1,0 +1,566 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/main.css" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body class="flex sm:flex-col flex-row">
+  <!-- START OF HEADER  -->
+  <header class="md:w-[280px] position: sm:relative position: md:fixed md:top-0 md:left-0 basis-1/4 md:min-h-full bg-emerald-500">
+    <div class="flex flex-col space-y-7 md:overflow-y-auto">
+      <h1 class="pt-4 text-white text-center text-2xl font-bold">Demaria Woods</a></h1>
+      <div class="sm:hidden md:hidden lg:flex lg:position: relative">
+        <div class="position: fixed top-10 left-14">
+          <p class="text-white text-center"><small>Pronounced: <a href="https://www.naturalreaders.com/online/?s=V1d13c1070-6102-4b25-96ff-418836088b0e/personweb/doc/ff907730-9c73-11ed-b92f-1654f3103435.pdf&t=NaturalReader%20Document" target="_blank" class="text-yellow-200 font-bold">Dee-mar-ree-a'</a></small></p>
+        </div>
+      </div>
+     
+     <!-- NAVIGATION -->
+      <nav class="py-2">
+        <button id="hamburger" class="border border-white-600 position: absolute top-1 w-10 h-10 ml-4 mt-4 md:hidden">
+          <div role="hidden" id="line1" class="inset-0 w-6 h-0.5 m-auto rounded-full bg-white transition duration-300">
+          </div>
+          <div role="hidden" id="line2"
+            class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-white transition duration-300"></div>
+          <div role="hidden" id="line3"
+            class="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-white transition duration-300"></div>
+        </button>
+
+        <div id="navigation" class="sm:hidden md:flex lg:flex xl:flex flex-col">
+          <div class="flex flex-col items-center">
+            <img src="./images/personal/demaria.woods-2.png"
+              class=" shadow rounded-full max-w-full h-auto align-middle border-none">
+            <div class="inline-flex py-6">
+              <div class="position: relative">
+                <div class="mx-3 my-3 p-0 text-white md:h-[85px]" id="intro"></div><!--//bio-->
+              </div>
+            </div>
+            <ul class="flex flex-row mt-2 mb-6">
+              <li class="mx-2 text-white cursor-pointer">
+                <a  href="https://github.com/dwoods447" target="_blank" title="Github">
+                  <svg style="width:36px;height:36px" viewBox="0 0 24 24" class="text-white">
+                    <path fill="currentColor"
+                      d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mx-2 cursor-pointer">
+                <a href="https://codepen.io/dwoods447" target="_blank" title="CodePen">
+                  <svg style="width:36px;height:36px" viewBox="0 0 24 24" class="text-white">
+                    <path fill="currentColor"
+                      d="M8.21 12L6.88 12.89V11.11L8.21 12M11.47 9.82V7.34L7.31 10.12L9.16 11.36L11.47 9.82M16.7 10.12L12.53 7.34V9.82L14.84 11.36L16.7 10.12M7.31 13.88L11.47 16.66V14.18L9.16 12.64L7.31 13.88M12.53 14.18V16.66L16.7 13.88L14.84 12.64L12.53 14.18M12 10.74L10.12 12L12 13.26L13.88 12L12 10.74M22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12M18.18 10.12C18.18 10.09 18.18 10.07 18.18 10.05L18.17 10L18.17 10L18.16 9.95C18.15 9.94 18.15 9.93 18.14 9.91L18.13 9.89L18.11 9.85L18.1 9.83L18.08 9.8L18.06 9.77L18.03 9.74L18 9.72L18 9.7L17.96 9.68L17.95 9.67L12.3 5.91C12.12 5.79 11.89 5.79 11.71 5.91L6.05 9.67L6.05 9.68L6 9.7C6 9.71 6 9.72 6 9.72L5.97 9.74L5.94 9.77L5.93 9.8L5.9 9.83L5.89 9.85L5.87 9.89L5.86 9.91L5.84 9.95L5.84 10L5.83 10L5.82 10.05C5.82 10.07 5.82 10.09 5.82 10.12V13.88C5.82 13.91 5.82 13.93 5.82 13.95L5.83 14L5.84 14L5.84 14.05C5.85 14.06 5.85 14.07 5.86 14.09L5.87 14.11L5.89 14.15L5.9 14.17L5.92 14.2L5.94 14.23C5.95 14.24 5.96 14.25 5.97 14.26L6 14.28L6 14.3L6.04 14.32L6.05 14.33L11.71 18.1C11.79 18.16 11.9 18.18 12 18.18C12.1 18.18 12.21 18.15 12.3 18.1L17.95 14.33L17.96 14.32L18 14.3L18 14.28L18.03 14.26L18.06 14.23L18.08 14.2L18.1 14.17L18.11 14.15L18.13 14.11L18.14 14.09L18.16 14.05L18.16 14L18.17 14L18.18 13.95C18.18 13.93 18.18 13.91 18.18 13.88V10.12M17.12 12.89V11.11L15.79 12L17.12 12.89Z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mx-2 cursor-pointer">
+                <a href="https://stackoverflow.com/users/7465705/demaria" target="_blank" title="Stack Overflow">
+                  <svg style="width:36px;height:36px" viewBox="0 0 24 24" class="text-white">
+                    <path fill="currentColor"
+                      d="M17.36,20.2V14.82H19.15V22H3V14.82H4.8V20.2H17.36M6.77,14.32L7.14,12.56L15.93,14.41L15.56,16.17L6.77,14.32M7.93,10.11L8.69,8.5L16.83,12.28L16.07,13.9L7.93,10.11M10.19,6.12L11.34,4.74L18.24,10.5L17.09,11.87L10.19,6.12M14.64,1.87L20,9.08L18.56,10.15L13.2,2.94L14.64,1.87M6.59,18.41V16.61H15.57V18.41H6.59Z" />
+                  </svg>
+                </a>
+              </li>
+            </ul><!--//social-list-->
+            <hr>
+          </div><!--//profile-section-->
+          <hr>
+          <ul class="flex flex-col lg:mb-5">
+            <li class="inline-flex p-2 my-2 text-white hover:text-black cursor-pointer">
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="mx-2">
+                <path fill="currentColor"
+                  d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+              </svg>
+              <a class="font-bold" href="#about">
+                About Me
+              </a>
+            </li>
+            <li class="inline-flex p-2 md:my-1 text-white hover:text-black cursor-pointer">
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="mx-2">
+                <path fill="currentColor"
+                  d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V19A2,2 0 0,1 20,21H4C2.89,21 2,20.1 2,19V8C2,6.89 2.89,6 4,6H8V4C8,2.89 8.89,2 10,2M14,6V4H10V6H14Z" />
+              </svg>
+              <a class="font-bold" href="#workhistory">Were I've Worked</a>
+            </li>
+            <li class="inline-flex p-2 md:my-1 text-white hover:text-black cursor-pointer">
+              <svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mx-2"><title>laptop</title><path fill="currentColor" d="M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z" /></svg>
+              <a class="font-bold" id="#projects">Portfolio</a>
+            </li>
+            <li class="inline-flex p-2 md:my-1 text-white hover:text-black cursor-pointer">
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="mx-2">
+                <path fill="currentColor"
+                  d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" />
+              </svg>
+              <a class="font-bold" href="https://drive.google.com/file/d/1W8LPAwC4rl9nNahNBWN6QDCjUNT4ePt4/view?usp=sharing">Resume</a>
+            </li>
+            <li class="inline-flex p-2 md:my-1 text-white hover:text-black cursor-pointer">
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="mx-2">
+                <path fill="currentColor"
+                  d="M20.07,4.93C21.88,6.74 23,9.24 23,12C23,14.76 21.88,17.26 20.07,19.07L18.66,17.66C20.11,16.22 21,14.22 21,12C21,9.79 20.11,7.78 18.66,6.34L20.07,4.93M17.24,7.76C18.33,8.85 19,10.35 19,12C19,13.65 18.33,15.15 17.24,16.24L15.83,14.83C16.55,14.11 17,13.11 17,12C17,10.89 16.55,9.89 15.83,9.17L17.24,7.76M13,10A2,2 0 0,1 15,12A2,2 0 0,1 13,14A2,2 0 0,1 11,12A2,2 0 0,1 13,10M11.5,1A2.5,2.5 0 0,1 14,3.5V8H12V4H3V19H12V16H14V20.5A2.5,2.5 0 0,1 11.5,23H3.5A2.5,2.5 0 0,1 1,20.5V3.5A2.5,2.5 0 0,1 3.5,1H11.5Z" />
+              </svg>
+              <a class="font-bold" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <hr>
+          <div class="flex flex-col text-center items-center justify-center md:mt-2 lg:mt-5">
+            <div class="inline-flex p-2 my-2 text-white hover:text-black cursor-pointer bg-red-400 w-48 text-center">
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24" class=" mx-2">
+                <path fill="currentColor"
+                  d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+              </svg> 
+              <button class="w-48 font-bold">Email Me</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div><!--//force-overflow-->
+  </header>
+  <!-- END OF HEADER -->
+
+  <!-- START OF HERO SECTION  -->
+  <div class="md:ml-[280px] basis-3/4">
+    <section class="bg-slate-100 py-12 px-2">
+      <div class="flex flex-col md:flex-row items-center ">
+
+        <div class="w-3/5">
+          <h1 class="text-5xl font-bold mx-2">Demaria Woods</h1>
+          <div class="mx-2 mt-3 text-2xl">Senior Software Engineer</div>
+          <div class="px-2 mt-4 mr-4 mb-2 w-3/4">
+            I'm a software engineer specialized in frontend and backend development for complex scalable web apps. I'm also
+            5-year US Navy veteran and graduate of the University of Houston, earning a Bachelor's and Master's of
+            Science in Computer Information Systems with a minor in Computer Graphics Technology. I've been coding since
+            freshman year of college. Check out my project portfolio and online resume.
+          </div><!--//bio-->
+          <div class="flex flex-row">
+            <button
+              class="bg-emerald-500 hover:text-white text-grey-darkest font-bold mx-2 py-2 px-4 rounded inline-flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <a href="#projects"><span>View Projects</span></a>
+            </button>
+            <button
+              class="bg-emerald-500 hover:text-white text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+              </svg>
+
+              <a href="https://drive.google.com/file/d/1W8LPAwC4rl9nNahNBWN6QDCjUNT4ePt4/view?usp=sharing" target="_blank"><span>View Resume</span></a>
+              <button>
+          </div>
+        </div><!--//col-->
+
+        <div class="w-2/5">
+          <img src="./images/personal/demaria.woods-1.png" class="mt-6 sm:mt-2">
+        </div>
+      </div>
+    </section>
+    <!-- END OF HERO SECTION  -->
+
+    <!-- END OF ABOUT SECTION  -->
+    <section id="about">
+      <div class="py-6 mx-6">
+        <h2 class="text-3xl font-bold border-l-4 px-5 my-6 border-emerald-500">What I do</h2>
+        <div class="my-6">I have combined total <span class="font-semibold">7+ years of experience</span> developing complex applications (distributed
+          applications, microservices, and micro-frontends). I'm fast learner with the desire to learn and strong
+          problem-solving skills and foresight.</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="">
+            <div class="inline-flex">
+              <div class="mr-3">
+                <i class="devicon-javascript-plain colored text-5xl"></i>
+              </div>
+            </div>
+            <h3 class="mt-2 font-semibold">Vanilla JavaScript</h3>
+            <div>I have 6+ years of experience with vanilla JavaScript and ES6+ best practices</div>
+          </div><!--//item-->
+
+          <div class="item">
+            <div class="inline-flex">
+              <div class="mr-3"><i class="devicon-typescript-plain colored text-5xl"></i></div>
+              <div class="mr-3"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="48px" height="48px;" /></div>
+            </div>
+            <h3 class="mt-2 font-semibold">Vue 2/Vue 3, Typescript</h3>
+            <div>I have 5+ years of experience using frontend JS framework Vue including knowledge of using
+              Vue 3 along with Composition API and Typescript </div>
+          </div><!--//item-->
+
+          <div class="item">
+            <div class="inline-flex">
+              <div class="mr-3"><i class="devicon-typescript-plain colored text-5xl"></i></div>
+              <div class="mr-3"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" width="75px" height="75px;" /></div>  
+            </div>
+            <h3 class="mt-2 font-semibold">Node.js, Typescript</h3>
+            <div>Familar with defining and integrating with REST APIs using Express w/Typescript </div>
+          </div><!--//item-->
+
+          <div class="item">
+              <div class="inline-flex mx-2">
+               <div class="mr-3"> <i class="devicon-php-plain colored text-5xl"></i></div>
+               <div class="mr-3"> <i class="devicon-laravel-plain colored text-5xl"></i></div>
+              </div>
+              <h3 class="mt-2 font-semibold">PHP & Laravel PHP</h3>
+              <div>Experience with PHP and PHP frameworks such as Laravel and MVC design patterns Also
+                proficient in MySQL, Postgres, MongoDB relational database design as well as NoSQL databases. </div>
+          </div><!--//item-->
+          <div class="item">
+              <div class="inline-flex">
+                <div class="mr-3">
+                  <i class="devicon-npm-original-wordmark colored text-5xl"></i>
+                </div>
+                <div class="mr-3">
+                  <i class="devicon-docker-plain-wordmark colored text-5xl"></i>
+                </div>
+                <div class="mr-3">
+                  <i class="devicon-amazonwebservices-plain-wordmark colored text-5xl"></i>
+                </div>
+              </div>
+              <h3 class="mt-2 font-semibold">npm, yarn, aws ...</h3>
+              <div>Familar with AWS tools and also multiple build tools such as yarn, npm, Docker and more. </div>
+          </div><!--//item-->
+          <div class="item">
+              <div class="inline-flex">
+               <div class="mr-3">
+                <i class="devicon-html5-plain colored text-5xl"></i>
+               </div>
+                <div class="mr-3">
+                  <i class="devicon-css3-plain colored text-5xl"></i>
+                </div>
+              </div>
+              <h3 class="mt-2 font-semibold">HTML &amp; CSS</h3>
+              <div >Have 7+ years of experience with HTML & CSS </div>
+          </div><!--//item-->
+          <div class="item">
+            <div class="inline-flex">
+            <div class="mr-3">
+              <i class="devicon-sass-original colored text-5xl"></i>
+            </div>
+              <div class="mr-3">
+                <i class="devicon-less-plain-wordmark colored text-5xl"></i>
+              </div>
+            </div>
+            <h3 class="mt-2 font-semibold">Sass &amp; LESS</h3>
+            <div >Familiarity with Sass and Less (SCSS)  </div>
+          </div><!--//item-->
+
+          <div class="item">
+            <div class="inline-flex">
+              <div class="mr-3">
+                <i class="devicon-jest-plain colored text-5xl"></i>
+              </div>
+            </div>
+            <h3 class="mt-2 font-semibold">Jest &amp; Vitest</h3>
+            <div >Familiarity with Unit Testing frameworks <a href="https://jestjs.io/" target="_blank">Jest</a> and <a href="https://vitest.dev/" target="_blank">Vitest</a> </div>
+          </div><!--//item-->
+        </div><!--//row-->
+
+
+      </div><!--//container-->
+    </section>
+
+    <!-- END OF ABOUT SECTION  -->
+
+    <div >
+      <hr>
+    </div>
+
+
+ <!-- START OF WORK HISTORY SECTION  -->
+<section id="workhistory">
+  <div class="py-6 mx-6">
+    <h2 class="text-3xl font-bold border-l-4 px-5 my-6 border-emerald-500">Where I've Worked</h2>
+    <div class="container mx-auto w-full h-full">
+        <div class="relative wrap overflow-hidden p-10 h-full">
+          
+          <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+          <!-- right timeline -->
+          <div class="mb-8 flex justify-between items-center w-full right-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-14 h-14 rounded-full">
+              <h1 class="mx-auto font-semibold text-lg text-white">2022</h1>
+            </div>
+            <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <h3 class="mb-3 font-bold text-gray-800 text-xl">Lorem Ipsum</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+
+          <!-- left timeline -->
+          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-14 h-14 rounded-full">
+              <h1 class="mx-auto text-white font-semibold text-lg">2021</h1>
+            </div>
+            <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
+              <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+          
+          <!-- right timeline -->
+          <div class="mb-8 flex justify-between items-center w-full right-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-14 h-14 rounded-full">
+              <h1 class="mx-auto font-semibold text-lg text-white">2020</h1>
+            </div>
+            <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <h3 class="mb-3 font-bold text-gray-800 text-xl">Lorem Ipsum</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+
+          <!-- left timeline -->
+          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-14 h-14 rounded-full">
+              <h1 class="mx-auto text-white font-semibold text-lg">2017</h1>
+            </div>
+            <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
+              <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+  </div>
+</section>
+ <!-- END OF WORK HISTORY SECTION  -->
+<div>
+  <hr>
+</div>
+
+
+    <!-- START OF PROJECT SECTION  -->
+    <section id="projects">
+      <div class="py-6 mx-6">
+        <h2 class="text-3xl font-bold border-l-4 px-5 my-6 border-emerald-500">Featured Projects</h2>
+        <div class="my-6">
+          <p>Here are a couple of fun projects i've worked on over the years.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center py-2 mx-2" id="app">
+          <!-- skills-->
+          <h4 class="mb-2 font-semibold">Sort Project by Skill</h4>
+          <ul class="xs:flex-col md:inline-flex mb-5">
+           <li v-for="skill in skillsList" @click="sortProjectBySkill(skill)" class="inline-flex items-center justify-center w-[140px] h-[40px] m-2 lg:mr-3 bg-slate-200  border-2 border-emerald-500 shadow-lg shadow-emerald-500/50 py-2 px-2 cursor-pointer">
+            <span v-if="skill === 'vue.js'" class="m-4 ">
+              <svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>vuejs</title><path fill="#3FA17C" d="M2,3H5.5L12,15L18.5,3H22L12,21L2,3M6.5,3H9.5L12,7.58L14.5,3H17.5L12,13.08L6.5,3Z" /></svg>
+            </span>
+            <span v-if="skill === 'node.js'" class="m-4">
+              <svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>nodejs</title><path fill="#60B248" d="M12,1.85C11.73,1.85 11.45,1.92 11.22,2.05L3.78,6.35C3.3,6.63 3,7.15 3,7.71V16.29C3,16.85 3.3,17.37 3.78,17.65L5.73,18.77C6.68,19.23 7,19.24 7.44,19.24C8.84,19.24 9.65,18.39 9.65,16.91V8.44C9.65,8.32 9.55,8.22 9.43,8.22H8.5C8.37,8.22 8.27,8.32 8.27,8.44V16.91C8.27,17.57 7.59,18.22 6.5,17.67L4.45,16.5C4.38,16.45 4.34,16.37 4.34,16.29V7.71C4.34,7.62 4.38,7.54 4.45,7.5L11.89,3.21C11.95,3.17 12.05,3.17 12.11,3.21L19.55,7.5C19.62,7.54 19.66,7.62 19.66,7.71V16.29C19.66,16.37 19.62,16.45 19.55,16.5L12.11,20.79C12.05,20.83 11.95,20.83 11.88,20.79L10,19.65C9.92,19.62 9.84,19.61 9.79,19.64C9.26,19.94 9.16,20 8.67,20.15C8.55,20.19 8.36,20.26 8.74,20.47L11.22,21.94C11.46,22.08 11.72,22.15 12,22.15C12.28,22.15 12.54,22.08 12.78,21.94L20.22,17.65C20.7,17.37 21,16.85 21,16.29V7.71C21,7.15 20.7,6.63 20.22,6.35L12.78,2.05C12.55,1.92 12.28,1.85 12,1.85M14,8C11.88,8 10.61,8.89 10.61,10.39C10.61,12 11.87,12.47 13.91,12.67C16.34,12.91 16.53,13.27 16.53,13.75C16.53,14.58 15.86,14.93 14.3,14.93C12.32,14.93 11.9,14.44 11.75,13.46C11.73,13.36 11.64,13.28 11.53,13.28H10.57C10.45,13.28 10.36,13.37 10.36,13.5C10.36,14.74 11.04,16.24 14.3,16.24C16.65,16.24 18,15.31 18,13.69C18,12.08 16.92,11.66 14.63,11.35C12.32,11.05 12.09,10.89 12.09,10.35C12.09,9.9 12.29,9.3 14,9.3C15.5,9.3 16.09,9.63 16.32,10.66C16.34,10.76 16.43,10.83 16.53,10.83H17.5C17.55,10.83 17.61,10.81 17.65,10.76C17.69,10.72 17.72,10.66 17.7,10.6C17.56,8.82 16.38,8 14,8Z" /></svg>
+            </span>
+            <span v-if="skill === 'typescript'" class="m-4">
+              <svg style="width:24px;height:24px;color:rgb(0,122,205);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>language-typescript</title><path fill="#1E8BC3" d="M3,3H21V21H3V3M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86M13,11.25H8V12.75H9.5V20H11.25V12.75H13V11.25Z" /></svg>
+            </span>
+            <span v-if="skill === 'nuxt.js'" class="m-4">
+              <svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>nuxt</title><path  fill="#00DC82" d="M21.8 18.36L16.03 8.08C15.93 8 15.63 7.43 15.03 7.43C14.78 7.43 14.43 7.53 14.07 8.08L13.33 9.26L11.31 5.65C11.26 5.55 10.91 5 10.31 5C10.06 5 9.66 5.1 9.36 5.65L2.18 18.31C2.13 18.41 1.83 19 2.13 19.5C2.23 19.75 2.53 20 3.19 20H20.85C20.95 20 21.6 20 21.9 19.5C22 19.26 22.1 18.86 21.8 18.36M8.1 18.31L7.95 18.86H3.24L10.36 6.34L12.66 10.47L8.1 18.31M9.21 18.86L13.32 11.66L17.5 18.86H9.21M18.74 18.86L18.54 18.31L14 10.46L15.03 8.73L20.75 18.86H18.74Z" /></svg>
+            </span>
+            <span v-if="skill === 'php'" class="m-4">
+              <svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>language-php</title><path fill="#4F5B93" d="M12,18.08C5.37,18.08 0,15.36 0,12C0,8.64 5.37,5.92 12,5.92C18.63,5.92 24,8.64 24,12C24,15.36 18.63,18.08 12,18.08M6.81,10.13C7.35,10.13 7.72,10.23 7.9,10.44C8.08,10.64 8.12,11 8.03,11.47C7.93,12 7.74,12.34 7.45,12.56C7.17,12.78 6.74,12.89 6.16,12.89H5.29L5.82,10.13H6.81M3.31,15.68H4.75L5.09,13.93H6.32C6.86,13.93 7.3,13.87 7.65,13.76C8,13.64 8.32,13.45 8.61,13.18C8.85,12.96 9.04,12.72 9.19,12.45C9.34,12.19 9.45,11.89 9.5,11.57C9.66,10.79 9.55,10.18 9.17,9.75C8.78,9.31 8.18,9.1 7.35,9.1H4.59L3.31,15.68M10.56,7.35L9.28,13.93H10.7L11.44,10.16H12.58C12.94,10.16 13.18,10.22 13.29,10.34C13.4,10.46 13.42,10.68 13.36,11L12.79,13.93H14.24L14.83,10.86C14.96,10.24 14.86,9.79 14.56,9.5C14.26,9.23 13.71,9.1 12.91,9.1H11.64L12,7.35H10.56M18,10.13C18.55,10.13 18.91,10.23 19.09,10.44C19.27,10.64 19.31,11 19.22,11.47C19.12,12 18.93,12.34 18.65,12.56C18.36,12.78 17.93,12.89 17.35,12.89H16.5L17,10.13H18M14.5,15.68H15.94L16.28,13.93H17.5C18.05,13.93 18.5,13.87 18.85,13.76C19.2,13.64 19.5,13.45 19.8,13.18C20.04,12.96 20.24,12.72 20.38,12.45C20.53,12.19 20.64,11.89 20.7,11.57C20.85,10.79 20.74,10.18 20.36,9.75C20,9.31 19.37,9.1 18.54,9.1H15.79L14.5,15.68Z" /></svg>
+            </span>
+            <span v-if="skill === 'laravel'" class="m-4">
+              <svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>laravel</title><path  fill="#F4392E" d="M21.7 6.53C21.71 6.55 21.71 6.58 21.71 6.61V10.9C21.71 11 21.65 11.12 21.56 11.17L17.95 13.25V17.36C17.95 17.47 17.9 17.57 17.8 17.63L10.28 21.96C10.26 21.97 10.24 22 10.22 22L10.2 22C10.15 22 10.09 22 10.04 22C10.03 22 10 22 10 22C10 22 10 21.97 9.96 21.96L2.44 17.63C2.35 17.58 2.29 17.47 2.29 17.36V4.5C2.29 4.45 2.29 4.42 2.3 4.4C2.3 4.39 2.31 4.38 2.31 4.37C2.31 4.35 2.32 4.34 2.33 4.32C2.33 4.31 2.34 4.3 2.35 4.29C2.36 4.28 2.37 4.27 2.38 4.26C2.39 4.25 2.4 4.24 2.41 4.23C2.42 4.22 2.43 4.21 2.44 4.21L6.2 2.04C6.3 2 6.42 2 6.5 2.04L10.28 4.21H10.28C10.29 4.22 10.3 4.22 10.31 4.23C10.32 4.24 10.33 4.25 10.34 4.26C10.35 4.27 10.36 4.28 10.37 4.29C10.38 4.3 10.39 4.31 10.39 4.32C10.4 4.34 10.41 4.35 10.41 4.37C10.41 4.38 10.42 4.39 10.42 4.4C10.43 4.43 10.43 4.45 10.43 4.5V12.5L13.57 10.72V6.61C13.57 6.58 13.57 6.55 13.58 6.53L13.59 6.5C13.59 6.5 13.6 6.47 13.61 6.45C13.61 6.44 13.62 6.43 13.63 6.42C13.64 6.41 13.65 6.4 13.66 6.39C13.67 6.38 13.68 6.37 13.69 6.36C13.7 6.35 13.71 6.34 13.72 6.34L17.5 4.17C17.58 4.11 17.7 4.11 17.8 4.17L21.56 6.34C21.57 6.34 21.58 6.35 21.59 6.36L21.62 6.39C21.63 6.4 21.64 6.41 21.65 6.42C21.66 6.43 21.66 6.44 21.67 6.45C21.68 6.47 21.68 6.5 21.69 6.5C21.7 6.5 21.7 6.5 21.7 6.53M21.09 10.72V7.15L17.95 8.95V12.5L21.09 10.72M17.33 17.18V13.6L10.43 17.54V21.15L17.33 17.18M2.91 5V17.18L9.81 21.15V17.54L6.21 15.5L6.2 15.5L6.2 15.5C6.19 15.5 6.18 15.5 6.17 15.47C6.16 15.47 6.15 15.46 6.14 15.45V15.45C6.13 15.44 6.12 15.43 6.11 15.42C6.1 15.41 6.1 15.4 6.09 15.39V15.39C6.08 15.37 6.08 15.36 6.07 15.35C6.07 15.33 6.06 15.32 6.06 15.31C6.05 15.3 6.05 15.28 6.05 15.27C6.05 15.25 6.05 15.24 6.05 15.23V6.82L2.91 5M6.36 2.68L3.23 4.5L6.36 6.28L9.5 4.5L6.36 2.68M9.81 12.88V5L6.67 6.82V14.69L9.81 12.88M17.64 4.8L14.5 6.61L17.64 8.41L20.77 6.61L17.64 4.8M17.33 8.95L14.19 7.15V10.72L17.33 12.5V8.95M10.12 17L17 13.06L13.88 11.26L7 15.23L10.12 17Z" /></svg>
+            </span>
+            <span v-if="skill === 'vite'" class="mr-4">
+              <img src="https://vitejs.dev/logo.svg" alt="" data-v-f9af9fb3="" style="width:24px;height:24px">
+            </span>
+            <span v-if="skill === 'jest'" class="mr-4">
+                <i class="devicon-jest-plain colored" style="width:24px;height:24px"></i>
+            </span>
+            <span v-if="skill === 'vitest'" class="mr-4">
+             <img src="https://vitest.dev/logo.svg" alt="" data-v-19d60f42="" style="width:24px;height:24px">
+            </span>
+            {{ skill.charAt(0).toUpperCase() +  skill.slice(1) }}
+          </li>
+          </ul>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+
+            <div v-for="project in filteredProjects" :key="project.name"
+              class="max-w-sm rounded overflow-hidden shadow-lg my-4 transition-all ease-in-out">
+              <div class="w-full border-b-4 border-emerald-400">
+                <img class="w-full" :src=" project.mainImage || 'https://via.placeholder.com/384x284'" :alt="project.name">
+              </div>
+              
+
+              <div class="font-bold text-xl p-2 m-1">{{ project.name }}</div>
+              <div class="flex flex-col items-center justify-center h-200px] mb-4">
+                <p class="text-gray-700 text-base px-4 py-4">
+                  {{ project.description }}
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center h-[60px] font-extrabold">
+                  <h4 class="underline text-emerald-500"> View Project</h4>
+                  <div class="flex flex-row">
+                    <a :href="project.github" target="_blank"><div class="m-2" title="Github">
+                      <img src="./images/icons/github.svg" alt="Github" style="width:48px; height:48px;">
+                    </div>
+                    </a>
+                    <a :href="project.mainUrl" target="_blank"><div class="m-2" title="Live on the Web">
+                      <img src="./images/icons/web.svg" alt="ive on the Web" style="width:48px; height:48px;">
+                    </div>
+                   </a>
+                  </div>
+              </div>
+              <div class="h-[35px] m-2">
+                <div class="inline-flex">
+                  <span v-if="project.skillsUsed.includes('vue.js')" class="mr-4">
+                    <svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>vuejs</title><path fill="#3FA17C" d="M2,3H5.5L12,15L18.5,3H22L12,21L2,3M6.5,3H9.5L12,7.58L14.5,3H17.5L12,13.08L6.5,3Z" /></svg>
+                  </span>
+                  <span v-if="project.skillsUsed.includes('node.js')" class="mr-4">
+                    <svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>nodejs</title><path fill="#60B248" d="M12,1.85C11.73,1.85 11.45,1.92 11.22,2.05L3.78,6.35C3.3,6.63 3,7.15 3,7.71V16.29C3,16.85 3.3,17.37 3.78,17.65L5.73,18.77C6.68,19.23 7,19.24 7.44,19.24C8.84,19.24 9.65,18.39 9.65,16.91V8.44C9.65,8.32 9.55,8.22 9.43,8.22H8.5C8.37,8.22 8.27,8.32 8.27,8.44V16.91C8.27,17.57 7.59,18.22 6.5,17.67L4.45,16.5C4.38,16.45 4.34,16.37 4.34,16.29V7.71C4.34,7.62 4.38,7.54 4.45,7.5L11.89,3.21C11.95,3.17 12.05,3.17 12.11,3.21L19.55,7.5C19.62,7.54 19.66,7.62 19.66,7.71V16.29C19.66,16.37 19.62,16.45 19.55,16.5L12.11,20.79C12.05,20.83 11.95,20.83 11.88,20.79L10,19.65C9.92,19.62 9.84,19.61 9.79,19.64C9.26,19.94 9.16,20 8.67,20.15C8.55,20.19 8.36,20.26 8.74,20.47L11.22,21.94C11.46,22.08 11.72,22.15 12,22.15C12.28,22.15 12.54,22.08 12.78,21.94L20.22,17.65C20.7,17.37 21,16.85 21,16.29V7.71C21,7.15 20.7,6.63 20.22,6.35L12.78,2.05C12.55,1.92 12.28,1.85 12,1.85M14,8C11.88,8 10.61,8.89 10.61,10.39C10.61,12 11.87,12.47 13.91,12.67C16.34,12.91 16.53,13.27 16.53,13.75C16.53,14.58 15.86,14.93 14.3,14.93C12.32,14.93 11.9,14.44 11.75,13.46C11.73,13.36 11.64,13.28 11.53,13.28H10.57C10.45,13.28 10.36,13.37 10.36,13.5C10.36,14.74 11.04,16.24 14.3,16.24C16.65,16.24 18,15.31 18,13.69C18,12.08 16.92,11.66 14.63,11.35C12.32,11.05 12.09,10.89 12.09,10.35C12.09,9.9 12.29,9.3 14,9.3C15.5,9.3 16.09,9.63 16.32,10.66C16.34,10.76 16.43,10.83 16.53,10.83H17.5C17.55,10.83 17.61,10.81 17.65,10.76C17.69,10.72 17.72,10.66 17.7,10.6C17.56,8.82 16.38,8 14,8Z" /></svg>
+                  </span>
+                  <span v-if="project.skillsUsed.includes('typescript')" class="mr-4">
+                    <svg style="width:24px;height:24px;color:rgb(0,122,205);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>language-typescript</title><path fill="#1E8BC3" d="M3,3H21V21H3V3M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86M13,11.25H8V12.75H9.5V20H11.25V12.75H13V11.25Z" /></svg>
+                  </span>
+                  <span v-if="project.skillsUsed.includes('nuxt.js')" class="mr-4">
+                    <svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>nuxt</title><path  fill="#00DC82" d="M21.8 18.36L16.03 8.08C15.93 8 15.63 7.43 15.03 7.43C14.78 7.43 14.43 7.53 14.07 8.08L13.33 9.26L11.31 5.65C11.26 5.55 10.91 5 10.31 5C10.06 5 9.66 5.1 9.36 5.65L2.18 18.31C2.13 18.41 1.83 19 2.13 19.5C2.23 19.75 2.53 20 3.19 20H20.85C20.95 20 21.6 20 21.9 19.5C22 19.26 22.1 18.86 21.8 18.36M8.1 18.31L7.95 18.86H3.24L10.36 6.34L12.66 10.47L8.1 18.31M9.21 18.86L13.32 11.66L17.5 18.86H9.21M18.74 18.86L18.54 18.31L14 10.46L15.03 8.73L20.75 18.86H18.74Z" /></svg>
+                  </span>
+                  <span v-if="project.skillsUsed.includes('php')" class="mr-4">
+                    <svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>language-php</title><path fill="#4F5B93" d="M12,18.08C5.37,18.08 0,15.36 0,12C0,8.64 5.37,5.92 12,5.92C18.63,5.92 24,8.64 24,12C24,15.36 18.63,18.08 12,18.08M6.81,10.13C7.35,10.13 7.72,10.23 7.9,10.44C8.08,10.64 8.12,11 8.03,11.47C7.93,12 7.74,12.34 7.45,12.56C7.17,12.78 6.74,12.89 6.16,12.89H5.29L5.82,10.13H6.81M3.31,15.68H4.75L5.09,13.93H6.32C6.86,13.93 7.3,13.87 7.65,13.76C8,13.64 8.32,13.45 8.61,13.18C8.85,12.96 9.04,12.72 9.19,12.45C9.34,12.19 9.45,11.89 9.5,11.57C9.66,10.79 9.55,10.18 9.17,9.75C8.78,9.31 8.18,9.1 7.35,9.1H4.59L3.31,15.68M10.56,7.35L9.28,13.93H10.7L11.44,10.16H12.58C12.94,10.16 13.18,10.22 13.29,10.34C13.4,10.46 13.42,10.68 13.36,11L12.79,13.93H14.24L14.83,10.86C14.96,10.24 14.86,9.79 14.56,9.5C14.26,9.23 13.71,9.1 12.91,9.1H11.64L12,7.35H10.56M18,10.13C18.55,10.13 18.91,10.23 19.09,10.44C19.27,10.64 19.31,11 19.22,11.47C19.12,12 18.93,12.34 18.65,12.56C18.36,12.78 17.93,12.89 17.35,12.89H16.5L17,10.13H18M14.5,15.68H15.94L16.28,13.93H17.5C18.05,13.93 18.5,13.87 18.85,13.76C19.2,13.64 19.5,13.45 19.8,13.18C20.04,12.96 20.24,12.72 20.38,12.45C20.53,12.19 20.64,11.89 20.7,11.57C20.85,10.79 20.74,10.18 20.36,9.75C20,9.31 19.37,9.1 18.54,9.1H15.79L14.5,15.68Z" /></svg>
+                  </span>
+                  <span v-if="project.skillsUsed.includes('laravel')" class="mr-4">
+                    <svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>laravel</title><path  fill="#F4392E" d="M21.7 6.53C21.71 6.55 21.71 6.58 21.71 6.61V10.9C21.71 11 21.65 11.12 21.56 11.17L17.95 13.25V17.36C17.95 17.47 17.9 17.57 17.8 17.63L10.28 21.96C10.26 21.97 10.24 22 10.22 22L10.2 22C10.15 22 10.09 22 10.04 22C10.03 22 10 22 10 22C10 22 10 21.97 9.96 21.96L2.44 17.63C2.35 17.58 2.29 17.47 2.29 17.36V4.5C2.29 4.45 2.29 4.42 2.3 4.4C2.3 4.39 2.31 4.38 2.31 4.37C2.31 4.35 2.32 4.34 2.33 4.32C2.33 4.31 2.34 4.3 2.35 4.29C2.36 4.28 2.37 4.27 2.38 4.26C2.39 4.25 2.4 4.24 2.41 4.23C2.42 4.22 2.43 4.21 2.44 4.21L6.2 2.04C6.3 2 6.42 2 6.5 2.04L10.28 4.21H10.28C10.29 4.22 10.3 4.22 10.31 4.23C10.32 4.24 10.33 4.25 10.34 4.26C10.35 4.27 10.36 4.28 10.37 4.29C10.38 4.3 10.39 4.31 10.39 4.32C10.4 4.34 10.41 4.35 10.41 4.37C10.41 4.38 10.42 4.39 10.42 4.4C10.43 4.43 10.43 4.45 10.43 4.5V12.5L13.57 10.72V6.61C13.57 6.58 13.57 6.55 13.58 6.53L13.59 6.5C13.59 6.5 13.6 6.47 13.61 6.45C13.61 6.44 13.62 6.43 13.63 6.42C13.64 6.41 13.65 6.4 13.66 6.39C13.67 6.38 13.68 6.37 13.69 6.36C13.7 6.35 13.71 6.34 13.72 6.34L17.5 4.17C17.58 4.11 17.7 4.11 17.8 4.17L21.56 6.34C21.57 6.34 21.58 6.35 21.59 6.36L21.62 6.39C21.63 6.4 21.64 6.41 21.65 6.42C21.66 6.43 21.66 6.44 21.67 6.45C21.68 6.47 21.68 6.5 21.69 6.5C21.7 6.5 21.7 6.5 21.7 6.53M21.09 10.72V7.15L17.95 8.95V12.5L21.09 10.72M17.33 17.18V13.6L10.43 17.54V21.15L17.33 17.18M2.91 5V17.18L9.81 21.15V17.54L6.21 15.5L6.2 15.5L6.2 15.5C6.19 15.5 6.18 15.5 6.17 15.47C6.16 15.47 6.15 15.46 6.14 15.45V15.45C6.13 15.44 6.12 15.43 6.11 15.42C6.1 15.41 6.1 15.4 6.09 15.39V15.39C6.08 15.37 6.08 15.36 6.07 15.35C6.07 15.33 6.06 15.32 6.06 15.31C6.05 15.3 6.05 15.28 6.05 15.27C6.05 15.25 6.05 15.24 6.05 15.23V6.82L2.91 5M6.36 2.68L3.23 4.5L6.36 6.28L9.5 4.5L6.36 2.68M9.81 12.88V5L6.67 6.82V14.69L9.81 12.88M17.64 4.8L14.5 6.61L17.64 8.41L20.77 6.61L17.64 4.8M17.33 8.95L14.19 7.15V10.72L17.33 12.5V8.95M10.12 17L17 13.06L13.88 11.26L7 15.23L10.12 17Z" /></svg>
+                  </span>
+                  <span v-if="project.skillsUsed.includes('vite')" class="mr-4">
+                    <img src="https://vitejs.dev/logo.svg" alt="" data-v-f9af9fb3="" style="width:24px;height:24px">
+                  </span>
+                  <span v-if="project.skillsUsed.includes('jest')" class="mr-4">
+                      <i class="devicon-jest-plain colored" style="width:24px;height:24px"></i>
+                  </span>
+                  <span v-if="project.skillsUsed.includes('vitest')" class="mr-4">
+                   <img src="https://vitest.dev/logo.svg" alt="" data-v-19d60f42="" style="width:24px;height:24px">
+                  </span>
+                </div>
+              </div>
+            </div>
+         
+          </div><!--//grid-->
+          <div class="flex flex-col items-center justify-center font-bold my-3 py-3">
+            <div v-html="noProjects"></div>
+          </div>
+        </div>
+
+      </div><!--//container-->
+    </section>
+    <!-- END OF PROJECT SECTION  -->
+
+    <div>
+      <hr>
+    </div>
+
+    <section id="contact" class="flex flex-col">
+      <div class="py-6 mx-6">
+        <h2 class="text-3xl font-bold border-l-4 px-5 my-6 border-emerald-500">Get In Touch</h2>
+        <div class="flex fex-col justify-center items-center">
+            <div class="min-h-[500px] w-[70%]">
+              <p class="w-[100%] md:w-[62%] mx-auto font-bold xl:font-size text-lg text-emerald-400">Do you have an interesting project I can help with? Feel free to reach out to me!</p>
+              <ul class="flex flex-col md:flex-row justify-center items-center mx-auto">
+                <li class="m-3 text-emerald-500 font-bold hover:text-black">
+                  <a href="tel:832-985-4300">Phone: 832-985-4300</a>
+                </li>
+                <li class="m-3 text-emerald-500 font-bold hover:text-black">
+                 Email: <a href="mailto:dwoods447@gmail.com">dwoods447@gmail.com</a>
+                </li>
+              </ul>
+              <form method="POST" action="https://formspree.io/dwoods447@gmail.com" id="contactForm">
+                <div class="my-3 mx-3 py-5 px-5">
+                  <div>
+                    <div><input required type="text" name="name" id="name" placeholder="Name"  class="mt-1 block w-full bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"/></div>
+                    <div><input required type="email" name="email" id="email" placeholder="Email"   class="mt-1 block w-full bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"s/></div>
+                    <div><textarea required name="message" id="message" placeholder="Message" rows="4" class="mt-1 block w-full bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"></textarea></div>
+                  </div>
+                  <div class="mt-5">
+                    <button class="bg-emerald-500 w-full py-2 hover:text-white text-black font-bold" type="submit">Submit</button>
+                  </div>	
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </section>
+     <hr/>
+    <footer class="flex flex-col items-center justify-center">
+      <div class="py-5 my-5">
+        <p class="sm:ml-4 sm:pl-4 sm:mr-4 sm:pr-4 sm:border-l sm:border-r sm:border-slate-200 dark:sm:border-slate-200/5 text-slate-200" >Copyright &copy;<span id="copyright" ></span> Demaria Woods <span class="m-4 border-l border-slate-200">&nbsp;</span> Made with <a href="https://tailwindcss.com/" target="_blank" title="tailwindcss.com">tailwindcss<a></p>
+      </div>
+    </footer>
+  </div><!--//main-wrapper-->
+  <script src="./scripts/navigation.js"></script>
+  <script type="module">
+    import projects from './scripts/projects.js'
+
+    const { createApp } = Vue
+
+    createApp({
+      mounted(){
+        // Set All Projects on load
+        this.projects = [...projects]
+      },
+      data() {
+        return {
+          message: 'Hello, and welcome to my portfolio my name is Demaria Woods!',
+          projects: [],
+          skillsList: [
+          'vue.js',
+          'node.js',
+          'typescript',
+          'nuxt.js',
+          'laravel',
+          'php',
+          'vite',
+          'jest',
+          'vitest' 
+          ]
+        }
+      },
+      methods: {
+        sortProjectBySkill(skill){
+          const currentProjects = projects.filter((project) => {
+            return project.skillsUsed.includes(skill)
+          })
+
+          if(currentProjects.length > 0){
+            this.projects = []
+            this.projects = currentProjects
+          } else {
+           this.projects = []           
+          }
+        }
+      },
+      computed: {
+        filteredProjects(){
+          return this.projects
+        },
+        noProjects(){
+          return this.projects.length <= 0 ? `No current projects with that skill listed here! <a href="https://github.com/dwoods447/" target="_bank"><span class="text-sky-500">Check Github</span></a>.` : ''
+        }
+      },
+      watch: {
+      }
+    }).mount('#app')
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <a title="Google Analytics Alternative" href="https://clicky.com/101395085"><img alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
+    <script async src="//static.getclicky.com/101395085.js"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101395085ns.gif" /></p></noscript>  
+</body>
+<script src="./scripts/intro.js"></script>
+</script>
+</html>

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@media (max-width: 60em) {
+#navigation { 
+   animation: translate .4s;
+}
+       
+@keyframes translate {
+ 0% {
+    transform: translateY(-20%)
+}
+100%{
+   transform: translateY(0%)
+ }
+ }
+}
+
+
+.typed-cursor {
+   margin-top: 12px;
+}
+
