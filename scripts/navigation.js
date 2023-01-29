@@ -19,7 +19,7 @@ hamburger.addEventListener('click', () => {
         line3.classList.remove('mt-1.5')
         line3.style.display = 'none'
     } else {
-        //hide nav
+        // hide nav
         console.log(`hiding nav`)
         navigation.classList.add('sm:hidden')
         navigation.classList.add('md:hidden')
