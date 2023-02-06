@@ -15,7 +15,7 @@ const projects = [
       'mongodb',
     ],
     databases: [
-        'MongoDB'
+        'mongodb'
     ],
     techIcons: [],
     imageUrls:[],
@@ -63,7 +63,9 @@ const projects = [
         'smartystreets API',
         'sequelize ORM'
     ],
-    databases: [],
+    databases: [
+        'postgres'
+    ],
     techIcons: [],
     imageUrls:[],
     modalLink: '#animatedModal-6',
@@ -110,7 +112,7 @@ const projects = [
         'axios'
     ],
     databases: [
-        'PostGres'
+        'postgres'
     ],
     techIcons: [],
     imageUrls:[],
@@ -135,7 +137,7 @@ const projects = [
         'axios'
     ],
     databases: [
-        'MySQL'
+        'mysql'
     ],
     techIcons: [],
     imageUrls:[],
@@ -159,13 +161,36 @@ const projects = [
         'pretty-checkbox',
         'vue-paginate'
     ],
-    databases: [],
+    databases: [
+       'mysql'
+    ],
     techIcons: [],
     imageUrls:[],
     modalLink: '',
     modalId: '',
    },
-//    {
+   {
+    name: 'Saiyan Spectator 2.0',
+    date: '',
+    description: 'Personal Dragonball fansite re-built using Laravel 8, PHP7, and Vue 3',
+    mainImage: 'images/fulls/saiyan-spectator-2.0.jpg',
+    mainUrl: 'http://saiyian-spectator-2-app.herokuapp.com/',
+    documentsLinks: [],
+    github: 'https://github.com/dwoods447/saiyan-spectator-2.0',
+    skillsUsed: [
+        'vue.js',
+        'laravel',
+        'inertia.js'
+    ],
+    databases: [
+        'mysql'
+    ],
+    techIcons: [],
+    imageUrls:[],
+    modalLink: '',
+    modalId: '',
+   },
+   //    {
 //     name: '',
 //     date: '',
 //     description: '',
