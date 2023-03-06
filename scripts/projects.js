@@ -147,7 +147,7 @@ const projects = [
       {
     name: 'Universty of Houston\'s Class Search App',
     date: '',
-    description: 'The online hybrid, and session class search was designed and build by me to help UH students quickly find classes that fit their schedule.',
+    description: 'The online hybrid, and session class search was re-designed and built by me to help UH students quickly find classes that fit their schedule.',
     mainImage: './images/fulls/class-search-university-of-houston.png',
     mainUrl: 'https://uh.edu/online/sessions/class-search/',
     documentsLinks: [],
