@@ -1,6 +1,52 @@
 const projects = [
+    {
+    name: 'ImSeekingGeeks - Online Dating App 2.0 - User Interface',
+    dateStarted: '',
+    dateCompeleted: ``,
+    description: 'ImSeekingGeeks is an online dating platform only available in the US that lets you the meet the most amazing singles.',
+    mainImage: './images/fulls/online-dating-promo-main.jpg',
+    mainUrl: '',
+    documentsLinks: [],
+    github: 'https://github.com/dwoods447/online_dating_app',
+    skillsUsed: [
+      'vue.js',
+      'typescript',
+      'vite'
+      
+    ],
+    databases: [
+        'mongodb'
+    ],
+    techIcons: [],
+    imageUrls:[],
+    modalLink: '#animatedModal-8',
+    modalId: 'modal08',
+   },
    {
-    name: 'ImSeekingGeeks - Online Dating App',
+    name: 'ImSeekingGeeks - Online Dating App 2.0 - Rest/API',
+    dateStarted: '',
+    dateCompeleted: ``,
+    description: 'ImSeekingGeeks is an online dating platform only available in the US that lets you the meet the most amazing singles.',
+    mainImage: './images/fulls/online-dating-promo-main.jpg',
+    mainUrl: '',
+    documentsLinks: [],
+    github: 'https://github.com/dwoods447/im-seeking-geeks-2.0',
+    skillsUsed: [
+      'node.js',
+      'express.js',
+      'mongodb',
+      'typescript',
+    ],
+    databases: [
+        'mongodb'
+    ],
+    techIcons: [],
+    imageUrls:[],
+    modalLink: '#animatedModal-8',
+    modalId: 'modal08',
+    },
+     {
+    name: 'ImSeekingGeeks - Online Dating App 1.0',
     dateStarted: '',
     dateCompeleted: ``,
     description: 'ImSeekingGeeks is an online dating platform only available in the US that lets you the meet the most amazing singles.',
@@ -163,6 +209,27 @@ const projects = [
     ],
     databases: [
        'mysql'
+    ],
+    techIcons: [],
+    imageUrls:[],
+    modalLink: '',
+    modalId: '',
+    },
+   {
+    name: 'Saiyan Spectator 1.0',
+    date: '',
+    description: 'Personal Dragonball fansite re-built using Laravel 8, PHP7, and Vue 3',
+    mainImage: 'images/fulls/saiyan-spectator-2.0.jpg',
+    mainUrl: 'http://saiyian-spectator-2-app.herokuapp.com/',
+    documentsLinks: [],
+    github: 'https://github.com/dwoods447/saiyan-spectator-2.0',
+    skillsUsed: [
+        'vue.js',
+        'laravel',
+        'inertia.js'
+    ],
+    databases: [
+        'mysql'
     ],
     techIcons: [],
     imageUrls:[],

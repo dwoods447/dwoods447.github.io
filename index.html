@@ -100,7 +100,7 @@
                 <path fill="currentColor"
                   d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" />
               </svg>
-              <a class="font-bold" href="https://drive.google.com/file/d/1W8LPAwC4rl9nNahNBWN6QDCjUNT4ePt4/view?usp=sharing">Resume</a>
+              <a class="font-bold" href="https://drive.google.com/file/d/12kAN6FhBSnrdJ_nRUGhnY4I2LBa7gKRU/view?usp=sharing">Resume</a>
             </li>
             <li class="inline-flex p-2 md:my-1 text-white hover:text-black cursor-pointer">
               <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="mx-2">
@@ -455,11 +455,11 @@
               <div class="flex flex-col items-center justify-center h-[60px] font-extrabold">
                   <h4 class="underline text-emerald-500"> View Project</h4>
                   <div class="flex flex-row">
-                    <a :href="project.github" target="_blank"><div class="m-2" title="Github">
+                    <a :href="project.github" target="_blank"><div class="m-2" title="Github" v-if="project.github">
                       <img src="./images/icons/github.svg" alt="Github" style="width:48px; height:48px;">
                     </div>
                     </a>
-                    <a :href="project.mainUrl" target="_blank"><div class="m-2" title="Live on the Web">
+                    <a :href="project.mainUrl" target="_blank"><div class="m-2" title="Live on the Web" v-if="project.mainUrl">
                       <img src="./images/icons/web.svg" alt="ive on the Web" style="width:48px; height:48px;">
                     </div>
                    </a>
