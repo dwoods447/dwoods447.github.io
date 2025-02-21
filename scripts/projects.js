@@ -93,7 +93,7 @@ const projects = [
         date: '',
         description: 'The Online Itailian Restauraunt allows customers to place an order from the website.',
         mainImage: 'images/fulls/itlalian-restauraunt.png',
-        mainUrl: '',
+        mainUrl: 'https://shy-lime-beetle-cuff.cyclic.app/#/',
         documentsLinks: [],
         github: 'https://github.com/dwoods447/online_restauraunt',
         skillsUsed: [
