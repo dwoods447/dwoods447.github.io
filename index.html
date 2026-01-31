@@ -104,8 +104,7 @@
                 <path fill="currentColor"
                   d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" />
               </svg>
-              <a class="font-bold" href="https://drive.google.com/file/d/12kAN6FhBSnrdJ_nRUGhnY4I2LBa7gKRU/view?usp=sharing
-                ">Resume</a>
+              <a class="font-bold" href="https://docs.google.com/document/d/1mLnf6_PrvjUIv8ZGZNzsatC26bFOpDmB/edit?usp=sharing&ouid=117205350374192840997&rtpof=true&sd=true">Resume</a>
             </li>
             <li class="inline-flex p-2 md:my-1 text-white hover:text-black cursor-pointer">
               <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="mx-2">
@@ -164,7 +163,7 @@
                   d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
               </svg>
 
-              <a href="https://drive.google.com/file/d/12kAN6FhBSnrdJ_nRUGhnY4I2LBa7gKRU/view?usp=drive_link"
+              <a href="https://docs.google.com/document/d/1mLnf6_PrvjUIv8ZGZNzsatC26bFOpDmB/edit?usp=sharing&ouid=117205350374192840997&rtpof=true&sd=true"
                 target="_blank"><span>View Resume</span></a>
               <button>
           </div>
@@ -181,7 +180,7 @@
     <section id="about">
       <div class="py-6 mx-6">
         <h2 class="text-3xl font-bold border-l-4 px-5 my-6 border-emerald-500">What I do</h2>
-        <div class="my-6">I have combined total <span class="font-semibold">10+ years of experience</span> developing
+        <div class="my-6">I have combined total <span class="font-semibold" id="years-experience">7+ years of experience</span> developing
           complex applications (distributed
           applications, microservices, and micro-frontends). I'm a fast learner with the desire to learn and strong
           problem-solving skills and foresight.</div>
@@ -706,6 +705,32 @@
     </footer>
   </div><!--//main-wrapper-->
   <script src="./scripts/navigation.js"></script>
+  <script>
+    // Calculate years of experience dynamically
+    function calculateYearsOfExperience(startYear, startMonth = 1) {
+      const startDate = new Date(startYear, startMonth - 1); // month is 0-indexed
+      const currentDate = new Date();
+      
+      let years = currentDate.getFullYear() - startDate.getFullYear();
+      
+      // Adjust if we haven't reached the anniversary month yet
+      if (currentDate.getMonth() < startDate.getMonth()) {
+        years--;
+      }
+      
+      return years;
+    }
+    
+    // Update the years of experience on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Career started in March 2016 (National Diversity Council)
+      const yearsExp = calculateYearsOfExperience(2016, 3);
+      const experienceElement = document.getElementById('years-experience');
+      if (experienceElement) {
+        experienceElement.textContent = yearsExp + '+ years of experience';
+      }
+    });
+  </script>
   <script type="module">
     import projects from './scripts/projects.js'
 
